@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom'
 export default class App extends Component{
     render(){
         return (
-            <div>Please clap</div>
+            <div>change all the things</div>
         );
     }
 }
