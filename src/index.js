@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import App from "./app"
 
 const Index = () => {
-    return <App/>
+    return (<App/>)
 };
 
 ReactDOM.render(<Index />, document.getElementById("index"));
