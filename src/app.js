@@ -9,4 +9,4 @@ export default class App extends Component{
     }
 }
 
-ReactDOM.render(<App message="Hooray, I exist!"/>, document.getElementById("main))
+ReactDOM.render(<App message="Hooray, I exist!"/>, document.getElementById("main"))
