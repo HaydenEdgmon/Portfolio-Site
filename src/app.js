@@ -1,10 +1,14 @@
 import React, {Component} from 'react'
-import ReactDOM from 'react-dom'
+import {Provider} from 'react-redux'
+import store from './configureStore'
+import Main from './containers/Main'
 
 export default class App extends Component{
     render(){
         return (
-            <div>change all the things 2</div>
+            <Provider className="appProvider" store={store}>
+                <Main/>
+            </Provider>
         );
     }
 }
