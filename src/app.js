@@ -1,12 +1,8 @@
-import React, {Component} from 'react'
-import ReactDOM from 'react-dom'
+import React from "react";
+import ReactDOM from "react-dom";
 
-export default class App extends Component{
-    render(){
-        return (
-            <div>Hello</div>
-    );
-    }
-}
+const Index = () => {
+    return <div>Hello React!</div>;
+};
 
-ReactDOM.render(<App message="Hooray, I exist!"/>, document.getElementById("main"))
+ReactDOM.render(<Index />, document.getElementById("index"));
