@@ -13,7 +13,7 @@ class ExampleComponent extends Component {
       console.log(MainReducer)
     return (
       <div className="exampleComponent">
-        This is an example comppnent. Add more elements or components to build your app!
+        This is an example component. Add more elements or components to build your app!
       </div>
     );
   }
