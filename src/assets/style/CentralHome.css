@@ -1,0 +1,10 @@
+.centralDiv{
+    width: 50vw;
+    height: 30vh;
+    margin: 10px auto;
+}
+.picOfMe{
+    width: 50vw;
+    padding: 10px auto;
+    border-radius: 50%
+}

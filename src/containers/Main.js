@@ -1,14 +1,14 @@
 import React, { Component } from 'react'
-import ExampleComponent from '../components/ExampleComponent'
+import CentralHome from '../components/CentralHome'
 import Header from './Header'
-import '../assets/Main.css'
+import '../assets/style/Main.css'
 
 class Main extends Component {
   render() {
     return (
       <div className="mainContainer">
         <Header/>
-        <ExampleComponent/>
+        <CentralHome/>
       </div>
     );
   }
