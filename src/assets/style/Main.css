@@ -1,7 +1,10 @@
+html{
+    overflow-y: hidden
+}
 .siteClass{
-    background-color: #212529
+    background-color: #2f2f2f
 }
 .mainContainer{
     text-align: center;
-    background-color: #212529
+    background-color: #2f2f2f
 }
