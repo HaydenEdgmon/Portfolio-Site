@@ -14,15 +14,17 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 2vw;
     text-align: center;
-    padding: 8vh 0;
+    padding-top: 8vh;
+    padding-bottom: 5vh;
 }
 .picOfMe{
     min-width: 180px;
     max-width: 300px;
     width: 40%;
     border-radius: 50%;
-    margin: 10px auto;
-    display: block
+    margin: 0 auto;
+    margin-bottom: 3vh;
+    display: block;
 }
 .picAndBioHome{
     width: 100%;
@@ -39,15 +41,22 @@
     font-weight: bold;
     display: block;
     color: white;
-    font-size: 160%;
+    font-size: 140%;
     text-align: center;
+    margin: 3vh 0;
 }
 .quickBioInfo{
+    margin: 0 auto;
+    font-size: 80%;
     display: block;
     color: white;
     text-align: center    
 }
-
+@media screen and (max-width: 4000px){
+    .quickBioInfo{
+        width: 80%;
+    }
+}
 @media screen and (max-width: 1300px) 
 {
     .quickLine{
@@ -63,6 +72,7 @@
         font-size: 80%;
     }
     .quickBioInfo{
+        width: 90%;
         font-size: 60%;
     }
 }

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {Navbar, Nav, NavDropdown} from 'react-bootstrap'
+import {Navbar, Nav} from 'react-bootstrap'
 import {changeNav} from '../actions/NavActions'
 import { connect } from 'react-redux'
 import '../assets/style/Header.css'
@@ -19,7 +19,6 @@ class Header extends Component {
         dispatch(changeNav(page))
     }
     openLink = (place) => {
-        const {dispatch} = this.props
         this.navigateTo(place)
         if(place==="twitter"){
             window.open("https://twitter.com/haydenedgmon")
@@ -35,7 +34,7 @@ class Header extends Component {
             <div className="navHead" >
                 <Navbar collapseOnSelect expand="lg" variant="dark" className="navHead">
                     <Navbar.Brand href={"#" + NavReducer.currentPage.toLowerCase()} onClick={() => this.navigateTo("Home")}>
-                        <img className="logoNavBar" src={logo}/>
+                        <img className="logoNavBar" src={logo} alt="H E"/>
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">

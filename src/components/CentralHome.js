@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
-import {changeReducerText} from '../actions/MainActions'
 import ReactPageScroller from 'react-page-scroller'
 import '../assets/style/CentralHome.css';
-import { Table } from 'react-bootstrap';
 import BioCard from './BioCard'
 
 var picture = require('../assets/images/me.jpg')
@@ -17,12 +15,11 @@ class CentralHome extends Component {
         this.reactPageScroller.goToPage(pageNumber);
     }
     render() {
-        const {MainReducer} = this.props
         return (
             <div className="centralDiv">
                 <ReactPageScroller  ref={c => this.reactPageScroller = c} containerWidth="100%" animationTimer={800}>
                     <BioCard/>
-                    <img className="picOfMe" src={picture}/>
+                    <img className="picOfMe" src={picture} alt="The pic of me seems to not be loading right now"/>
                 </ReactPageScroller>
             </div>
         );

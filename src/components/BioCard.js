@@ -6,21 +6,18 @@ import { Table } from 'react-bootstrap';
 var picture = require('../assets/images/me.jpg')
 
 class BioCard extends Component {
-    constructor(props){
-        super(props)
-    }
     render() {
         return (
             <div className="picAndBioHome">
                 <div className="quickLine">Fullstack developer, computational theory, and an eternal student</div>
-                <img className="picOfMe" src={picture}/>
+                <img className="picOfMe" src={picture} alt="The pic of me seems to not be loading right now"/>
                 <Table className="quickBio">
                     <tbody className="quickBioBody">
                         <tr className="quickBioName">
-                            Hayden Edgmon
+                           Hi, I'm Hayden
                         </tr>
                         <tr className="quickBioInfo">
-                            Fullerton California
+                            I'm a sofware engineer currnetly in southern California, I have worked professionally on APIs, monolithic and distributed systems, web application development, and embedded systems. My natural curiosity and process oriented learning make me an intrinsic developer. 
                         </tr>
                     </tbody>
                 </Table>
